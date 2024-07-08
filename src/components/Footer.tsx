@@ -1,6 +1,8 @@
 import { createClient } from "@/prismicio";
 import { PrismicNextLink } from "@prismicio/next";
 import Link from "next/link";
+import Logo from "@/components/Logo";
+import Bounded from "@/components/Bounded";
 
 
 const Footer = async () => {
@@ -10,22 +12,25 @@ const Footer = async () => {
 
 
     return (
-        <footer>
+        <Bounded as="footer">
+            <div className="flex sm:flex-row flex-col justify-between items-center gap-6">
             <Link href="/">
-                {settings.data.site_title}
+                <Logo/>
             </Link>
 
-            <p>©{new Date().getFullYear()} {settings.data.site_title}</p>
+            <p className="text-sm">
+                ©{new Date().getFullYear()} {settings.data.site_title}
+            </p>
             
-            <ul>
+            <ul className="flex">
                 {settings.data.navigation.map(({link, label}) => (
-                    <li key={label}>
+                    <li key={label} className="p-3">
                         <PrismicNextLink field={link}>{label}</PrismicNextLink>
                     </li>
                 ))}
             </ul>
-            
-        </footer>
+            </div>
+        </Bounded>
     );
 };
 
