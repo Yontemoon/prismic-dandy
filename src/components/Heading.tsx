@@ -17,7 +17,7 @@ const Heading = ({
 ) => {
     return (
         <Comp 
-            className={clsx("text-5xl md:text-7xl font-display font-bold leading-tight tracking-tight text-slate-700", 
+            className={clsx("font-display font-bold leading-tight tracking-tight text-slate-700", 
                 size === "xl" && "text-5xl md:text-7xl",
                 size ==="lg" && "text-4xl md:text-5xl",
                 size ==="md" && "text-3xl md:text-4xl",
