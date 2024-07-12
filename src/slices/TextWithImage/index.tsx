@@ -30,7 +30,7 @@ export type TextWithImageProps =
  * Component for "TextWithImage" Slices.
  */
 const TextWithImage = ({ slice }: TextWithImageProps): JSX.Element => {
-  console.log(slice);
+
   return (
     <Bounded
       data-slice-type={slice.slice_type}
