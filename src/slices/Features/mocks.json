@@ -9,8 +9,10 @@
 					{
 						"type": "heading2",
 						"content": {
-							"text": "Nodded"
-						}
+							"text": "This is a test",
+							"spans": []
+						},
+						"direction": "ltr"
 					}
 				]
 			},
@@ -52,6 +54,51 @@
 											"content": {
 												"text": "Sit sit laboris sint nulla aliqua. Qui sunt eiusmod in fugiat aliquip elit."
 											}
+										}
+									]
+								}
+							]
+						]
+					},
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"icon",
+								{
+									"__TYPE__": "FieldContent",
+									"type": "Select",
+									"value": "barchart"
+								}
+							],
+							[
+								"title",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "heading3",
+											"content": {
+												"text": "lol",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							],
+							[
+								"description",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "helloworld",
+												"spans": []
+											},
+											"direction": "ltr"
 										}
 									]
 								}
