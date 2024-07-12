@@ -48,7 +48,7 @@ const Testimonials = async ({ slice }: TestimonialsProps): Promise<JSX.Element> 
     })
   )
 
-  console.log({ testimonials });
+  // console.log({ testimonials });
 
   return (
     <Bounded
